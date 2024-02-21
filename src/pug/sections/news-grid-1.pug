@@ -1,0 +1,155 @@
+// TODO Переписать на гриды
+// TODO Переписать верстку карточек новостей
+section.news-grid.news-grid--1
+  .container
+    .news-grid__body
+      .column.column--size9
+        .swiper.news-slider.js-news-slider
+          .swiper-wrapper
+            .swiper-slide
+              .news-slider__item
+                .news-slider__media
+                  picture.news-slider__picture
+                    img.news-slider__image(src="images/popular-news-1.jpg" alt="Виртуальные герои: как технологии преображают анимацию персонажей")
+                .news-slider__body
+                  .news-slider__meta
+                    span.news-slider__date 10.01
+                    span.news-slider__category Анимация
+                    span.news-slider__comments 125
+                  a(href="#").news-slider__link Виртуальные герои: как технологии преображают анимацию персонажей
+            .swiper-slide
+              .news-slider__item
+                .news-slider__media
+                  picture.news-slider__picture
+                    img.news-slider__image(src="images/popular-news-1.jpg" alt="Виртуальные герои: как технологии преображают анимацию персонажей")
+                .news-slider__body
+                  .news-slider__meta
+                    span.news-slider__date 01.02
+                    span.news-slider__category Кодинг
+                    span.news-slider__comments 50
+                  a(href="#").news-slider__link Виртуальные герои: как технологии преображают анимацию персонажей
+            .swiper-slide
+              .news-slider__item
+                .news-slider__media
+                  picture.news-slider__picture
+                    img.news-slider__image(src="images/popular-news-1.jpg" alt="Виртуальные герои: как технологии преображают анимацию персонажей")
+                .news-slider__body
+                  .news-slider__meta
+                    span.news-slider__date 15.01
+                    span.news-slider__category 3D Анимация
+                    span.news-slider__comments 80
+                  a(href="#").news-slider__link Виртуальные герои: как технологии преображают анимацию персонажей
+            .swiper-slide
+              .news-slider__item
+                .news-slider__media
+                  picture.news-slider__picture
+                    img.news-slider__image(src="images/popular-news-1.jpg" alt="Виртуальные герои: как технологии преображают анимацию персонажей")
+                .news-slider__body
+                  .news-slider__meta
+                    span.news-slider__date 15.01
+                    span.news-slider__category 3D Анимация
+                    span.news-slider__comments 80
+                  a(href="#").news-slider__link Виртуальные герои: как технологии преображают анимацию персонажей
+          .swiper-button-next.js-news-slider__next
+          .swiper-button-prev.js-news-slider__prev
+          .swiper-pagination.js-news-slider__pagination
+
+        .news-card
+          .news-card__media
+            picture.news-card__picture
+              img.news-card__image(src="images/news/1.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
+          .news-card__body
+            .news-card__meta
+              span.news-card__date 10.01
+              a(href="#").news-card__category 2D анимация
+            a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
+            a(href="#").news-card__comments
+              i.news-card__comments-icon
+                include ../../images/icons/comments-gray.svg
+              | 125
+
+
+        .news-card
+          .news-card__media
+            picture.news-card__picture
+              img.news-card__image(src="images/news/2.jpg" alt="Что такое Культ? И как его создать сценаристу в своей истории?")
+          .news-card__body
+            .news-card__meta
+              span.news-card__date 14.01
+              a(href="#").news-card__category Культ
+            a(href="#").news-card__link Что такое Культ? И как его создать сценаристу в своей истории?
+            a(href="#").news-card__comments
+              i.news-card__comments-icon
+                include ../../images/icons/comments-gray.svg
+              | 125
+
+        .news-card
+          .news-card__media
+            picture.news-card__picture
+              img.news-card__image(src="images/news/3.jpg" alt="Кто такой 2D аниматор?")
+          .news-card__body
+            .news-card__meta
+              span.news-card__date 22.01
+              a(href="#").news-card__category 2D анимация
+            a(href="#").news-card__link Кто такой 2D аниматор?
+            a(href="#").news-card__comments
+              i.news-card__comments-icon
+                include ../../images/icons/comments-gray.svg
+              | 125
+
+        .news-card
+          .news-card__media
+            picture.news-card__picture
+              img.news-card__image(src="images/news/4.jpg" alt="Как создаются 3D мультфильмы")
+          .news-card__body
+            .news-card__meta
+              span.news-card__date 08.02
+              a(href="#").news-card__category 3D анимация
+            a(href="#").news-card__link Как создаются 3D мультфильмы
+            a(href="#").news-card__comments
+              i.news-card__comments-icon
+                include ../../images/icons/comments-gray.svg
+              | 125
+
+      .column.column--size3
+        .vertical-news
+          .vertical-news__header Популярное
+          ul.vertical-news__list
+            li.vertical-news__item
+              .news-card__meta
+                span.news-card__date 08.02
+                a(href="#").news-card__category Культ
+              a(href="#").news-card__link Как создать концепт-арт анимационного персонажа?
+              a(href="#").news-card__comments
+                i.news-card__comments-icon
+                  include ../../images/icons/comments-gray.svg
+                | 10
+
+            li.vertical-news__item
+              .news-card__meta
+                span.news-card__date 08.02
+                a(href="#").news-card__category Анимация
+              a(href="#").news-card__link Пугающие образы в советских мультфильмах
+              a(href="#").news-card__comments
+                i.news-card__comments-icon
+                  include ../../images/icons/comments-gray.svg
+                | 13
+            li.vertical-news__item
+              .news-card__meta
+                span.news-card__date 08.02
+                a(href="#").news-card__category Культ
+              a(href="#").news-card__link Брейкдауны. Почему они так важны в анимации?
+              a(href="#").news-card__comments
+                i.news-card__comments-icon
+                  include ../../images/icons/comments-gray.svg
+                | 27
+            li.vertical-news__item
+              .news-card__meta
+                span.news-card__date 08.02
+                a(href="#").news-card__category 3D анимация
+              a(href="#").news-card__link В ответ на растущий спрос на специалистов в области анимации, учебные заведения разрабатывают все более ...
+              a(href="#").news-card__comments
+                i.news-card__comments-icon
+                  include ../../images/icons/comments-gray.svg
+                | 56
+          a.vertical-news__readmore(href="#") Читать все новости

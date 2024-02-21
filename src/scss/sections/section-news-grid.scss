@@ -1,0 +1,10 @@
+.section-news-grid {
+
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 402px;
+  gap: 30px;
+}

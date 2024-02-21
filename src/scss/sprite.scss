@@ -1,0 +1,102 @@
+%svg-common {
+    background: url("../images/icons/sprite.svg") no-repeat;
+}
+
+.svg-icon--black-right-arrow {
+    @extend %svg-common;
+    background-position: 100% 0;
+    width: 15px;
+    height: 13px;
+}
+
+.svg-icon--clock {
+    @extend %svg-common;
+    background-position: 66.66666666666667% 93.75%;
+    width: 18px;
+    height: 18px;
+}
+
+.svg-icon--comments {
+    @extend %svg-common;
+    background-position: 75.80645161290323% 0;
+    width: 22px;
+    height: 22px;
+}
+
+.svg-icon--comments-gray {
+    @extend %svg-common;
+    background-position: 0 51.16279069767442%;
+    width: 23px;
+    height: 23px;
+}
+
+.svg-icon--comments-purple {
+    @extend %svg-common;
+    background-position: 39.34426229508197% 0;
+    width: 23px;
+    height: 23px;
+}
+
+.svg-icon--doubble-black-right-arrow {
+    @extend %svg-common;
+    background-position: 0 0;
+    width: 24px;
+    height: 22px;
+}
+
+.svg-icon--navigate {
+    @extend %svg-common;
+    background-position: 39.39393939393939% 95.74468085106383%;
+    width: 18px;
+    height: 19px;
+}
+
+.svg-icon--pausesvg {
+    @extend %svg-common;
+    background-position: 39.34426229508197% 50%;
+    width: 23px;
+    height: 20px;
+}
+
+.svg-icon--play-black {
+    @extend %svg-common;
+    background-position: 97.1830985915493% 25%;
+    width: 13px;
+    height: 14px;
+}
+
+.svg-icon--play-black-large {
+    @extend %svg-common;
+    background-position: 72.3076923076923% 50%;
+    width: 19px;
+    height: 22px;
+}
+
+.svg-icon--play-white {
+    @extend %svg-common;
+    background-position: 97.1830985915493% 51.92307692307692%;
+    width: 13px;
+    height: 14px;
+}
+
+.svg-icon--single-black-right-arrow {
+    @extend %svg-common;
+    background-position: 0 100%;
+    width: 13px;
+    height: 21px;
+}
+
+.svg-icon--single-white-right-arrow {
+    @extend %svg-common;
+    background-position: 18.309859154929576% 100%;
+    width: 13px;
+    height: 21px;
+}
+
+.svg-icon--white-right-arrow {
+    @extend %svg-common;
+    background-position: 98.57142857142857% 75.92592592592592%;
+    width: 14px;
+    height: 12px;
+}
+

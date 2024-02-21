@@ -1,0 +1,208 @@
+.authors {
+
+  .container {
+    display: grid;
+    grid-template-columns: minmax(320px, 780px) minmax(320px, 780px);
+    gap: 30px;
+    grid-auto-rows: 424px;
+  }
+
+
+  &__banner {
+    // @include col();
+    // @include size(6);
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &-title {
+      font-size: 46px;
+      line-height: 120%;
+      color: var(--dark);
+      width: 400px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .button-primary {
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: 40px;
+      font-family: var(--ff-gilroy);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 145%;
+    }
+  }
+}
+
+.author-card {
+  display: grid;
+  grid-template-columns: minmax(320px, 375px) minmax(320px, 375px);
+  gap: 30px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: #fff;
+
+  &__meta {
+    font-size: 16px;
+    color: var(--dark);
+    opacity: .5;
+    line-height: 130%;
+    letter-spacing: 0;
+    margin-bottom: 18px;
+  }
+
+  &__date {
+    position: relative;
+    padding-right: 15px;
+    margin-right: 8px;
+    display: inline-block;
+
+    &::before {
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      content: "";
+      height: 4px;
+      width: 4px;
+      background-color: var(--dark);
+      border-radius: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+
+    &:hover {
+      opacity: .74;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0;
+    transition: all .3s ease;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__readmore {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 120%;
+    font-family: var(--ff-gilroy);
+    font-weight: 500;
+    letter-spacing: 0;
+    transition: all .3s ease;
+
+    &::after {
+      display: block;
+      content: "";
+      height: 20.24px;
+      width: 20.24px;
+      border-radius: 7.12px;
+      background-color: var(--dark);
+      background-image: url("../images/icons/white-right-arrow.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-left: 12.57px;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      color: var(--purple);
+
+      &::after {
+        background-color: var(--purple);
+      }
+    }
+  }
+
+  &__time {
+    font-size: 14px;
+    color: #AEAEAE;
+    display: inline-block;
+    position: relative;
+    padding-left: 23px;
+    margin-left: 87px;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 16px;
+      width: 16px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url("../images/icons/clock.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  &__comments {
+    font-size: 14px;
+    color: #AEAEAE;
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-left: 12px;
+
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: '';
+      height: 21px;
+      width: 21px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url("../images/icons/comments-gray.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+
+  &__body {
+    padding-top: 40px;
+    padding-bottom: 47px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

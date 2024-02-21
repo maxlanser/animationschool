@@ -1,0 +1,39 @@
+extends ../layouts/default.pug
+include ../includes/mixins.pug
+
+block content
+  main.main
+    section.section-ui
+      .container
+        .row
+          .col
+            h1 Header 1
+            h2 Header 2
+            h3 Header 3
+            h4 Header 4
+        .row(style="margin-top: 40px;")
+          .col
+             h4(style="color: var(--yellow)") Buttons
+
+             a.button-primary(href="#") Посмотреть все курсы
+             a.button-primary.button-primary--disabled(href="#" disabled) Посмотреть все курсы
+
+             a.button-primary.button-primary--transparent(href="#") Посмотреть все курсы
+             a.button-primary.button-primary--transparent.button-primary--disabled(href="#" disabled) Посмотреть все курсы
+
+             a.button-primary.button-primary--white(href="#") Посмотреть все курсы
+             a.button-primary.button-primary--white.button-primary--disabled(href="#" disabled) Посмотреть все курсы
+
+             a.button-primary.button-primary--yellow(href="#") Посмотреть все курсы
+             a.button-primary.button-primary--yellow.button-primary--disabled(href="#" disabled) Посмотреть все курсы
+        .row(style="margin-top: 40px;")
+          .col
+            h4(style="color: var(--yellow)") Slider buttons
+            button.large-slider-button.large-slider-button--left
+            button.large-slider-button.large-slider-button--right
+
+            button.medium-slider-button.large-slider-button--left
+            button.medium-slider-button.large-slider-button--right
+
+            button.small-slider-button.large-slider-button--left
+            button.small-slider-button.large-slider-button--right

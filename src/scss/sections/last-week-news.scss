@@ -1,0 +1,162 @@
+.last-week-news {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  min-height: 383px;
+
+
+  &__wrapper {
+    padding: 60px 50px;
+    background-color: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 383px;
+  }
+
+  &__overflow {
+    //overflow: hidden;
+  }
+
+  &__header {
+    color: var(--dark);
+    font-family: var(--ff-title);
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 33.5px;
+    display: inline-block;
+  }
+
+  .swiper {
+    overflow: visible;
+
+    &-slide {
+      width: 315px;
+    }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    top: -48px;
+  }
+
+  .swiper-button-next {
+    right: 0;
+    left: auto;
+  }
+  .swiper-button-prev {
+    right: 57px;
+    left: auto;
+  }
+}
+
+.last-week-post {
+  //min-height: 402px;
+  max-width: 315px;
+  //border-radius: 18px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all .3s ease;
+
+  &:hover {
+    //box-shadow: 10px 10px 50px 0 rgba($color: #555769, $alpha: 0.15);
+  }
+
+
+  &__body {
+    padding: 0;
+    margin-top: 0px;
+  }
+
+  &__meta {
+    font-size: 16px;
+    line-height: 145%;
+    color: var(--dark);
+    letter-spacing: 0;
+  }
+
+  &__date {
+    opacity: .5;
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+      padding-right: 11px;
+
+    &::before {
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      content: '';
+      height: 4px;
+      width: 4px;
+      background-color: var(--dark);
+      border-radius: 100%;
+    }
+  }
+
+  &__category {
+    display: inline-block;
+    transition: all .3s ease;
+    opacity: .5;
+
+    &:hover {
+      color: var(--purple);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      opacity: 1;
+      transform: translateY(2px);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    transition: all .3s ease;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__comments {
+    display: inline-block;
+    margin-top: 10px;
+    color: #aeaeae;
+    font-size: 14px;
+    line-height: 145%;
+    letter-spacing: -0.01em;
+    transition: all .3s ease;
+    height: 24px;
+
+    &:hover {
+      color: var(--purple);
+
+      svg path {
+        stroke: var(--purple);
+      }
+    }
+
+    &-icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 1px;
+      margin-right: 3px;
+      width: 24px;
+      height: 24px
+    }
+
+    svg path {
+      transition: all .3s ease;
+    }
+  }
+}

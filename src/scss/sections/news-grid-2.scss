@@ -1,0 +1,45 @@
+.news-grid--2 {
+
+  .news-card {
+    &:nth-child(3), &:nth-child(4) {
+      margin-top: 30px;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 18px;
+  overflow: hidden;
+
+  &--vertical {
+    min-height: 834px;
+    padding: 28px;
+  }
+
+  &__text {
+    font-size: 46px;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-family: var(--ff-title);
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    margin-top: 97px;
+  }
+
+  .button-primary {
+    margin-top: 36.57px;
+    width: 100%;
+    line-height: 145%;
+    letter-spacing: 0;
+    font-family: var(--ff-gilroy);
+  }
+}
