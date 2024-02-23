@@ -61,44 +61,47 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  position: relative;
+  transition: all .3s ease;
+  //position: relative;
 
 
-  &__overlay {
-    position: absolute;
-    transition: all .3s ease;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
+  // &__overlay {
+  //   position: absolute;
+  //   transition: all .3s ease;
+  //   height: 100%;
+  //   width: 100%;
+  //   left: 0;
+  //   top: 0;
+  //   z-index: -1;
 
 
-    &::before {
-      display: block;
-      content: '';
-      position: absolute;
-      border-radius: 100%;
-      background-color: #D79F37;
-      transition: all .6s linear;
-      height: 5px;
-      width: 5px;
-      right: 20px;
-      bottom: -20px;
-    }
-  }
+  //   &::before {
+  //     display: block;
+  //     content: '';
+  //     position: absolute;
+  //     border-radius: 100%;
+  //     background-color: #D79F37;
+  //     transition: all .6s linear;
+  //     height: 5px;
+  //     width: 5px;
+  //     right: 20px;
+  //     bottom: -20px;
+  //   }
+  // }
 
 
 
   &:hover {
 
-    .vacancy__overlay {
-      background-color: var(--yellow);
+    background-color: var(--yellow);
+    transform: translateY(-2px);
+    // .vacancy__overlay {
+    //   background-color: var(--yellow);
 
-      &:before {
-        transform: translate(-150px, -230px) scale(120);
-      }
-    }
+      // &:before {
+      //   transform: translate(-150px, -230px) scale(120);
+      // }
+    //}
   }
 
   &__organization {

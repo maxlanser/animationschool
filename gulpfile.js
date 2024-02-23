@@ -156,7 +156,7 @@ function styles() {
     .pipe(rename('style.css'))
     .pipe(sourcemaps.write('maps/'))
     .pipe(dest('./dev/css'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream({match: '**/*.css'}));
 };
 
 
