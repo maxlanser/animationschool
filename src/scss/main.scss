@@ -110,14 +110,15 @@ a {
 
 .main {
   display: block;
+  padding-bottom: 141px;
 }
 
 @import './sections/horizontal-banner';
-@import './sections/news-grid-1';
-@import './sections/news-grid-2';
+@import './sections/section-news-grid';
 @import './sections/vacancies';
 @import './sections/categories-news';
 @import './sections/authors';
 @import './sections/courses';
 @import './sections/last-week-news';
-@import './sections/section-news-grid';
+@import './sections/large-banner';
+@import './sections/footer';

@@ -21,7 +21,7 @@ $offset_sm_one_side: math.div($offset_sm, 2);
 $offset_xs_one_side: math.div($offset_xs, 2);
 
 $fields: 15px;
-$fields_sm: 15px;
+$fields_sm: 17.84px;
 
 @mixin wrapper-full(){
     padding-left: $fields;

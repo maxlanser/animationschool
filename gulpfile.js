@@ -15,6 +15,7 @@ const woff2 = require('gulp-ttf2woff2');
 const babel = require("gulp-babel");
 const concat = require('gulp-concat');
 const gulpBabelMinify = require('gulp-babel-minify');
+const gcmq = require('gulp-group-css-media-queries');
 
 const svgSprite = require('gulp-svg-sprite');
 
@@ -154,6 +155,7 @@ function styles() {
 			cascade: false
 		}))
     .pipe(rename('style.css'))
+    .pipe(gcmq())
     .pipe(sourcemaps.write('maps/'))
     .pipe(dest('./dev/css'))
     .pipe(browserSync.stream({match: '**/*.css'}));

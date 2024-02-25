@@ -9,6 +9,15 @@
         el: ".js-news-slider__pagination",
         clickable: true
       },
+      breakpoints: {
+        374: {
+          slidesPerView: "auto",
+          spaceBetween: 14.72,
+          navigation: {
+            enabled: false
+          }
+        }
+      }
     });
 
     const vacanciesSwiper = new Swiper(".js-vacancies-slider", {
