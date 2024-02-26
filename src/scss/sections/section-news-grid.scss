@@ -1,5 +1,6 @@
 .section-news-grid {
   margin-bottom: 30px;
+  overflow: hidden;
 
   @include xs-block {
     margin-bottom: 20px;

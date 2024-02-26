@@ -1,5 +1,10 @@
 .vacancies {
   margin-bottom: 30px;
+  overflow: hidden;
+
+  @include xs-block {
+    background-color: #fff;
+  }
 
 
   &::before {
@@ -12,10 +17,19 @@
     background-color: #fff;
     border-radius: 18px;
     overflow: hidden;
+
+    @include xs-block {
+      padding: 20px 0;
+      overflow: visible;
+    }
   }
 
   &__overflow {
     overflow: hidden;
+
+    @include xs-block {
+      overflow: visible;
+    }
   }
 
   &__header {
@@ -27,10 +41,32 @@
     letter-spacing: 0;
     margin-bottom: 33.5px;
     display: inline-block;
+
+    @include xs-block {
+      margin-bottom: 15px;
+    }
   }
 
   .swiper {
     overflow: visible;
+
+    &-slide {
+
+      @include xs-block {
+        max-width: 240px;
+      }
+    }
+
+    &-scrollbar {
+      bottom: -20px;
+      background-color: transparent;
+      height: 6px;
+
+      &-drag {
+        background-color: #d0d0d0;
+        border-radius: 0;
+      }
+    }
   }
 
   .swiper-button-next, .swiper-button-prev {
@@ -62,6 +98,14 @@
   justify-content: flex-start;
   transition: all .3s ease;
   //position: relative;
+
+
+  @include xs-block {
+    padding: 19px;
+    height: 384px;
+    min-height: 0;
+    border-radius: 14px;
+  }
 
 
   // &__overlay {
@@ -107,6 +151,11 @@
     font-size: 18px;
     line-height: 130%;
     margin-top: 13px;
+
+    @include xs-block {
+      font-size: 16px;
+      margin-top: 14px;
+    }
   }
 
   &__geo {
@@ -114,6 +163,11 @@
     line-height: 145%;
     opacity: .5;
     margin-top: 14px;
+
+    @include xs-block {
+      font-size: 14px;
+      nargin-top: 15px;
+    }
 
     &-icon {
       height: 14px;
@@ -129,12 +183,21 @@
     font-family: var(--ff-title);
     font-weight: 700;
     margin-top: 27px;
+
+    @include xs-block {
+      font-size: 30px;
+      margin-top: 31px;
+    }
   }
 
   &__level {
     font-size: 18px;
     line-height: 130%;
     margin-top: 10px;
+
+    @include xs-block {
+      font-size: 16px;
+    }
   }
 
   &__salary {
@@ -144,5 +207,9 @@
     font-family: var(--ff-title);
     font-weight: 700;
     margin-top: auto;
+
+    @include xs-block {
+      font-size: 30px;
+    }
   }
 }

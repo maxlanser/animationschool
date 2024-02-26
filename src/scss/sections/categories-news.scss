@@ -1,6 +1,8 @@
 .categories-news {
   margin-bottom: 30px;
 
+  overflow: hidden;
+
   &__overflow {
     //overflow: hidden;
     position: relative;

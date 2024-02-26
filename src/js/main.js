@@ -10,11 +10,24 @@
         clickable: true
       },
       breakpoints: {
-        374: {
+        320: {
           slidesPerView: "auto",
           spaceBetween: 14.72,
           navigation: {
             enabled: false
+          }
+        },
+
+        561: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          navigation: {
+            nextEl: ".js-news-slider__next",
+            prevEl: ".js-news-slider__prev",
+          },
+          pagination: {
+            el: ".js-news-slider__pagination",
+            clickable: true
           }
         }
       }
@@ -26,6 +39,31 @@
       navigation: {
         nextEl: ".js-vacancies__slider-next",
         prevEl: ".js-vacancies__slider-prev",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: "auto",
+          spaceBetween: 15,
+          navigation: {
+            enabled: false
+          },
+          scrollbar: {
+            el: ".js-vacancies__slider-scrollbar",
+            hide: false
+          }
+        },
+        561: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".js-vacancies__slider-next",
+            prevEl: ".js-vacancies__slider-prev",
+          },
+          scrollbar: {
+            enabled: false
+          }
+
+        }
       }
     });
 
@@ -35,7 +73,8 @@
       navigation: {
         nextEl: ".js-categories-news__slider-next",
         prevEl: ".js-categories-news__slider-prev",
-      }
+      },
+
     });
 
     const coursesSwiper = new Swiper(".js-courses-slider", {
