@@ -1,5 +1,46 @@
 (() => {
+  const breakpoint = window.matchMedia( '(min-width:561px)' );
+
+  let categoriesSwiper;
+
+  const breakpointChecker = function() {
+
+    // if larger viewport and multi-row layout needed
+    if ( breakpoint.matches === true ) {
+
+      return enableSwiper();
+
+      // else if a small viewport and single column layout needed
+    } else if ( breakpoint.matches === false ) {
+
+      if ( categoriesSwiper !== undefined ) categoriesSwiper.destroy(true, true);
+
+      return;
+
+    }
+
+  };
+
+  const enableSwiper = function() {
+
+    categoriesSwiper = new Swiper(".js-categories-news-slider", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".js-categories-news__slider-next",
+        prevEl: ".js-categories-news__slider-prev",
+      },
+
+    });
+
+  };
+
   document.addEventListener('DOMContentLoaded', () => {
+
+    breakpoint.addListener(breakpointChecker);
+
+    breakpointChecker();
+
     const newsSwiper = new Swiper(".js-news-slider", {
       navigation: {
         nextEl: ".js-news-slider__next",
@@ -65,16 +106,6 @@
 
         }
       }
-    });
-
-    const categoriesSwiper = new Swiper(".js-categories-news-slider", {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".js-categories-news__slider-next",
-        prevEl: ".js-categories-news__slider-prev",
-      },
-
     });
 
     const coursesSwiper = new Swiper(".js-courses-slider", {

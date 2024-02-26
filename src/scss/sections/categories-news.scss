@@ -14,22 +14,42 @@
 
     &-wrapper {
       height: auto;
+
+      @include xs-block {
+        flex-direction: column;
+      }
     }
 
 
     &-slide {
       height: auto;
+
+      @include xs-block {
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
   .swiper-button-next {
     right: 0;
     transform: translateX(50%);
+
+    @include xs-block {
+      display: none;
+    }
   }
 
   .swiper-button-prev {
     left: 0;
     transform: translateX(-50%);
+
+    @include xs-block {
+      display: none;
+    }
   }
 }
 

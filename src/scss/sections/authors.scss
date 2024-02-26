@@ -6,6 +6,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 30px;
     grid-auto-rows: 424px;
+
+    @include xs-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
   }
 }
 
