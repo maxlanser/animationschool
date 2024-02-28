@@ -74,6 +74,7 @@
 
   @include xs-block {
     min-height: 0;
+    max-width: none;
     border-radius: 14px;
     padding-bottom: 20px;
   }

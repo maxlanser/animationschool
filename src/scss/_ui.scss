@@ -542,6 +542,10 @@
   &--square {
     max-width: 375px;
     max-height: 402px;
+
+    @include xs-block {
+      max-width: none;
+    }
   }
 
   &--wide {
