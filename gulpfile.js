@@ -89,6 +89,7 @@ function script(){
   return src([
     "./node_modules/swiper/swiper-bundle.min.js",
     "./src/js/libs/*.js",
+    "./src/js/menu.js",
     "./src/js/main.js"
     ])
     //.pipe(babel({presets: ["@babel/preset-env"]}))

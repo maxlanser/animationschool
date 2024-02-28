@@ -522,6 +522,14 @@
     object-fit: cover;
   }
 
+  &--horizontal {
+    height: 130px;
+
+    @include xs-block {
+      height: 80px;
+    }
+  }
+
   &--vertical {
     min-height: 834px;
 
