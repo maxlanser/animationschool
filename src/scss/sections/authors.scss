@@ -1,6 +1,10 @@
 .authors {
   margin-bottom:30px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @include xs-block {
     margin-bottom: 20px;
   }
@@ -129,6 +133,7 @@
     letter-spacing: 0;
     margin-bottom: 15px;
     transition: all .3s ease;
+    word-break: break-all;
 
     &:hover {
       opacity: .74;

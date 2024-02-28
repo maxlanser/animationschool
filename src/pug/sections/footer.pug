@@ -1,53 +1,64 @@
 footer.news-footer
   .container
-    .news-footer__left
-      a(href="#").news-footer__logo
-        include ../../images/footer-logo.svg
-      p.news-footer__copyrights Клуб анимации 2024 Все права защищены
-      P.news-footer__license Лицензия №Л035-01298-77/ 00634957 от 30.12.2022
-      .news-footer__designer
-        | Дизайнил &nbsp;
-        a(href="#").news-footer__designer-link Даниил Постнов
-
-    .news-footer__center
-      .news-footer__menu
-        ul.news-footer__menu-list
-          li.news-footer__menu-item
-            a(href="#").news-footer__menu-link Новости
-          li.news-footer__menu-item
-            a(href="#").news-footer__menu-link Статьи
-          li.news-footer__menu-item
-            a(href="#").news-footer__menu-link Вакансии
-          li.news-footer__menu-item
-            a(href="#").news-footer__menu-link Студии
-          li.news-footer__menu-item
-            a(href="#").news-footer__menu-link Курсы
-          li.news-footer__menu-item
-            a(href="#").news-footer__menu-link О клубе
-      p.news-footer__info ИП Тренин Андрей Евгеньевич <br> г. Москва ИНН 372102920162
-      a(href="#").news-footer__policies Пользовательское соглашение
-      a(href="#").news-footer__policies Политика обработки данных
-      ul.news-footer__socials-list
-        li.news-footer__socials-item
-          a(href="#").news-footer__socials-link
-            include ../../images/icons/social-tg.svg
-        li.news-footer__socials-item
-          a(href="#").news-footer__socials-link
-            include ../../images/icons/social-vk.svg
-        li.news-footer__socials-item
-          a(href="#").news-footer__socials-link
-            include ../../images/icons/social-yt.svg
-        li.news-footer__socials-item
-          a(href="#").news-footer__socials-link
-            include ../../images/icons/social-ds.svg
+    .news-footer__wrapper
+      .news-footer__left
+        a(href="#").news-footer__logo
+          include ../../images/footer-logo.svg
+        p.news-footer__copyrights Клуб анимации 2024 <br> Все права защищены
+        P.news-footer__license Лицензия №Л035-01298-77/ 00634957 от 30.12.2022
 
 
-    .news-footer__right
-      a(href="#").news-footer__makecall +7 (999) 333-15-03
-      p.news-footer__makecall-text Для вопросов по курсам
-      a(href="#").news-footer__mailto indox@animationclub.ru
-      p.news-footer__worktime Пн–Пт 9:00–18:00 (мск)
-      p.news-footer__coding
-        | Закодил
-        a(href="#").news-footer__coding-link TOP-Вёрстка
+      .news-footer__center
+        .news-footer__menu
+          ul.news-footer__menu-list
+            li.news-footer__menu-item
+              a(href="#").news-footer__menu-link Новости
+            li.news-footer__menu-item
+              a(href="#").news-footer__menu-link Статьи
+            li.news-footer__menu-item
+              a(href="#").news-footer__menu-link Вакансии
+            li.news-footer__menu-item
+              a(href="#").news-footer__menu-link Студии
+            li.news-footer__menu-item
+              a(href="#").news-footer__menu-link Курсы
+            li.news-footer__menu-item
+              a(href="#").news-footer__menu-link О клубе
+        p.news-footer__info ИП Тренин Андрей Евгеньевич <br> г. Москва ИНН 372102920162
+        a(href="#").news-footer__policies Пользовательское соглашение
+        a(href="#").news-footer__policies Политика обработки данных
+
+
+
+      .news-footer__right
+        a(href="#").news-footer__makecall
+          include ../../images/icons/call.svg
+          | +7 (999) 333-15-03
+        p.news-footer__makecall-text Для вопросов по курсам
+        a(href="#").news-footer__mailto indox@animationclub.ru
+        p.news-footer__worktime Пн–Пт 9:00–18:00 (мск)
+
+
+
+      .news-footer__bottom
+        .news-footer__designer
+          | Дизайнил &nbsp;
+          a(href="#").news-footer__designer-link Даниил Постнов
+
+        ul.news-footer__socials-list
+          li.news-footer__socials-item
+            a(href="#").news-footer__socials-link
+              include ../../images/icons/social-tg.svg
+          li.news-footer__socials-item
+            a(href="#").news-footer__socials-link
+              include ../../images/icons/social-vk.svg
+          li.news-footer__socials-item
+            a(href="#").news-footer__socials-link
+              include ../../images/icons/social-yt.svg
+          li.news-footer__socials-item
+            a(href="#").news-footer__socials-link
+              include ../../images/icons/social-ds.svg
+
+        p.news-footer__coding
+          | Закодил &nbsp;
+          a(href="#").news-footer__coding-link TOP-Вёрстка
 

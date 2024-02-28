@@ -6,15 +6,28 @@
   font-size: 18px;
   line-height: 130%;
 
-  a {
-    color: #fff;
+  @include xs-block {
+    padding-top: 35px;
   }
 
   .container {
+
+  }
+
+  &__wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
     height: auto;
+
+    @include xs-block {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &__left {
@@ -25,33 +38,43 @@
     font-size: 16px;
     line-height: 130%;
     letter-spacing: 0;
-    max-width: 314px;
+    width: 30%;
 
+    @include xs-block {
+      width: 100%;
+      align-items: center;
+      order: 1;
+    }
   }
 
   &__logo {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+
+    @include xs-block {
+      margin-bottom: 10px;
+    }
   }
 
   &__copyrights {
     width: 170px;
     margin-bottom: 15px;
+    letter-spacing: -0.02em;
+
+    @include xs-block {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+    }
   }
 
   &__license {
-    width: 300px;
-  }
+    width: 230px;
+    letter-spacing: -0.02em;
 
-  &__designer {
-    margin-top: auto;
-    font-size: 18px;
-    line-height: 120%;
-    letter-spacing: -1px;
-    opacity: .5;
-
-    &-link {
-      text-decoration: underline;
-      text-underline-offset: 4px;
+    @include xs-block {
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
     }
   }
 
@@ -61,10 +84,22 @@
     align-items: center;
     justify-content: flex-start;
     justify-self: center;
+    padding-top: 11px;
+
+    @include xs-block {
+      width: 100%;
+      order: 3;
+      padding-top: 0;
+      margin-top: 24px;
+    }
   }
 
   &__menu {
     margin-bottom: 36px;
+
+    @include xs-block {
+      margin-bottom: 22px;
+    }
 
     &-list {
       list-style: none;
@@ -73,26 +108,53 @@
       justify-content: center;
       font-size: 20px;
       line-height: 100%;
-      letter-spacing: -1px;
+      letter-spacing: -0.02em;
+
+      @include xs-block {
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+      }
     }
 
     &-item {
-      margin: 0 10px 0 10px;
+      margin: 0 10px 0 11px;
+
+      @include xs-block {
+        font-size: 16px;
+        line-height: 100%;
+        margin: 0 0 20px 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
 
     &-link {
       text-decoration: underline;
       text-underline-offset: 5px;
+      color: #fff;
+
+      @include xs-block {
+        text-underline-offset: 3px;
+      }
     }
   }
 
   &__info {
     font-size: 18px;
     line-height: 120%;
-    letter-spacing: -1px;
+    letter-spacing: -0.02em;
     margin-bottom: 30px;
     width: 314px;
     text-align: center;
+
+    @include xs-block {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 19px;
+    }
   }
 
   &__policies {
@@ -102,6 +164,8 @@
     text-align: center;
     text-decoration: none;
     text-underline-offset: 5px;
+    color: #fff;
+    letter-spacing: -0.02em;
 
     & + & {
       margin-top: 7px;
@@ -110,20 +174,144 @@
     &:hover {
       text-decoration: underline;
     }
+
+    @include xs-block {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 30%;
+
+    @include xs-block {
+      width: 100%;
+      order: 2;
+      align-items: center;
+      margin-top: 24px;
+    }
+  }
+
+  &__makecall {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 17px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    border-radius: 300px;
+    background-color: var(--yellow);
+    transition: all .3s ease;
+    margin-bottom: 15px;
+    margin-top: 2px;
+
+    @include xs-block {
+      margin-top: 0;
+      padding: 13px 17px;
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      background-color: #F8B12D;
+    }
+
+    svg {
+      margin-right: 5px;
+    }
+
+    &-text {
+      margin-bottom: 15px;
+
+      @include xs-block {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__mailto {
+    color: #fff;
+    margin-bottom: 5px;
+
+    @include xs-block {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+  }
+
+
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 31px;
+
+    @include xs-block {
+      flex-direction: column;
+      order: 4;
+      margin-top: 21px;
+    }
+  }
+
+  &__coding {
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    opacity: .5;
+    width: 30%;
+    text-align: right;
+    margin-top: 15px;
+
+    @include xs-block {
+      order: 3;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+    }
+
+    &-link {
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+
+      @include xs-block {
+        text-underline-offset: 3px;
+      }
+    }
   }
 
   &__socials {
 
     &-list {
-      margin-top: 30px;
       list-style: none;
       display: flex;
       align-items: flex-start;
       justify-content: center;
+
+      @include xs-block {
+        order: 1;
+      }
     }
 
     &-item {
-      margin: 0 13px 0 13px;
+      margin: 0 12px 0 14px;
     }
 
     &-link {
@@ -144,7 +332,30 @@
     }
   }
 
-  &__right {
+  &__designer {
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    opacity: .5;
+    width: 30%;
+    margin-top: 15px;
 
+    @include xs-block {
+      order: 2;
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      margin-top: 22px;
+    }
+
+    &-link {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      color: #fff;
+
+      @include xs-block {
+        text-underline-offset: 3px;
+      }
+    }
   }
 }

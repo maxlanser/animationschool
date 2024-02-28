@@ -111,6 +111,10 @@ a {
 .main {
   display: block;
   padding-bottom: 141px;
+
+  @include xs-block {
+    padding-bottom: 20px;
+  }
 }
 
 @import './sections/horizontal-banner';
