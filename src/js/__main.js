@@ -1,80 +1,49 @@
 (() => {
-  const breakpoint = window.matchMedia( '(min-width:561px)' );
+  let categoriesSwiper, newsSwiper, vacanciesSwiper, coursesSwiper, lastWeekNewsSwiper;
 
-  let categoriesSwiper;
-
-  const breakpointChecker = function() {
-
-    // if larger viewport and multi-row layout needed
-    if ( breakpoint.matches === true ) {
-
-      return enableSwiper();
-
-      // else if a small viewport and single column layout needed
-    } else if ( breakpoint.matches === false ) {
-
-      if ( categoriesSwiper !== undefined ) categoriesSwiper.destroy(true, true);
-
-      return;
-
+  const categoriesSwiperDefaults = {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".js-categories-news__slider-next",
+      prevEl: ".js-categories-news__slider-prev",
     }
+  }
 
-  };
+  const newsSwiperDefaults = {
 
-  const enableSwiper = function() {
+  }
 
-    categoriesSwiper = new Swiper(".js-categories-news-slider", {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".js-categories-news__slider-next",
-        prevEl: ".js-categories-news__slider-prev",
-      },
+  // Функция debounce
+  function debounce(fn, delay) {
+    let timer;
+    return function (...args) {
+      clearTimeout(timer);
+      timer = setTimeout(() => fn(...args), delay);
+    };
+  }
 
-    });
+  // Функция для определения ширины экрана
+  function getScreenWidth() {
+    return window.innerWidth;
+  }
 
-  };
+
+
+
+
+  categoriesSwiper = new Swiper(".js-categories-news-slider", {});
+
 
   document.addEventListener('DOMContentLoaded', () => {
 
-    breakpoint.addListener(breakpointChecker);
 
-    breakpointChecker();
 
-    const newsSwiper = new Swiper(".js-news-slider", {
-      navigation: {
-        nextEl: ".js-news-slider__next",
-        prevEl: ".js-news-slider__prev",
-      },
-      pagination: {
-        el: ".js-news-slider__pagination",
-        clickable: true
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: "auto",
-          spaceBetween: 14.72,
-          navigation: {
-            enabled: false
-          }
-        },
+    newsSwiper = new Swiper(".js-news-slider", {
 
-        561: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-          navigation: {
-            nextEl: ".js-news-slider__next",
-            prevEl: ".js-news-slider__prev",
-          },
-          pagination: {
-            el: ".js-news-slider__pagination",
-            clickable: true
-          }
-        }
-      }
     });
 
-    const vacanciesSwiper = new Swiper(".js-vacancies-slider", {
+    vacanciesSwiper = new Swiper(".js-vacancies-slider", {
       slidesPerView: 4,
       spaceBetween: 30,
       navigation: {
@@ -108,7 +77,7 @@
       }
     });
 
-    const coursesSwiper = new Swiper(".js-courses-slider", {
+    coursesSwiper = new Swiper(".js-courses-slider", {
       slidesPerView: "auto",
       spaceBetween: 30,
       navigation: {
@@ -145,7 +114,7 @@
       // }
     });
 
-    const lastWeekNewsSwiper = new Swiper(".js-last-week-news-slider", {
+    lastWeekNewsSwiper = new Swiper(".js-last-week-news-slider", {
       slidesPerView: "auto",
       spaceBetween: 30,
       navigation: {

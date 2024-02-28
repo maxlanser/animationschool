@@ -46,10 +46,15 @@
     min-height: 0;
     max-width: none;
     width: 100%;
+    border-radius: 14px;
 
     &:last-child {
       margin-bottom: 0;
     }
+
+    // & + .news-banner {
+    //   margin-top: 20px;
+    // }
   }
 
   &:hover {
@@ -490,6 +495,19 @@
   @include xs-block {
     min-width: 0;
     width: 100%;
+    border-radius: 14px;
+
+    &:first-child {
+      //margin-bottom: 20px;
+    }
+
+    &:last-child {
+      //margin-top: 20px;
+    }
+
+    // & + .news-card, & + div {
+    //   margin-top: 20px;
+    // }
   }
 
   &__link {
@@ -509,7 +527,7 @@
 
     @include xs-block {
       min-height: 500px;
-      margin-bottom: 20px;
+      //margin-bottom: 20px;
     }
   }
 
@@ -535,6 +553,10 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
+
+      @include xs-block {
+        padding: 20px 20px 63px 20px;
+      }
     }
 
 
@@ -555,6 +577,13 @@
         position: absolute;
         bottom: 30px;
         left: 30px;
+
+        @include xs-block {
+          left: 20px;
+          bottom: 23px;
+          font-size: 16px;
+          line-height: 130%;
+        }
       }
 
       &__date {

@@ -2,4 +2,7 @@ section.large-banner
   .container
     .news-banner.news-banner--large
       a(href="#").news-banner__link
-        img(src="images/large-banner-1.png")
+        //img(src="images/large-banner-1.png")
+        picture.news-banner__picture
+          source(srcset="images/large-banner-1-320.png" media="(max-width: 570px)")
+          img.news-banner__image(src="images/large-banner-1.png" alt="Забери курс")

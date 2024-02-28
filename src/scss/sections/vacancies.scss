@@ -4,6 +4,7 @@
 
   @include xs-block {
     background-color: #fff;
+    margin-bottom: 20px;
   }
 
 
@@ -60,7 +61,7 @@
     &-scrollbar {
       bottom: -20px;
       background-color: transparent;
-      height: 6px;
+      height: 3px;
 
       &-drag {
         background-color: #d0d0d0;

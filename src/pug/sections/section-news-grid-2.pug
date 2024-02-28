@@ -1,20 +1,26 @@
 section.section-news-grid.section-news-grid--2
   .container
     .section-news-grid__wrapper
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/2-1.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 08.01
-            a(href="#").news-card__category 2D анимация
-          a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
+      .news-banner.news-banner--colored(style="background-color: #464C81")
+        a(href="#").news-banner__link
+          span.news-banner__title.news-title-h2 Новая волна анимации: как технологии меняют мир мультфильмов
+        .news-banner__info.news-card__info
+          span.news-card__date 10.01
+          a(href="#").news-card__category Анимация
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/2-1.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 08.01
+      //-       a(href="#").news-card__category 2D анимация
+      //-     a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
 
       article.news-card
         .news-card__media
@@ -63,7 +69,10 @@ section.section-news-grid.section-news-grid--2
 
       .news-banner.news-banner--vertical
         a(href="#").news-banner__link
-          img.news-banner__image(src="images/vertical-banner-1.png")
+          //-   img.news-banner__image(src="images/vertical-banner-1.png")
+          picture.news-banner__picture
+            source(srcset="images/vertical-banner-1-320.png" media="(max-width: 570px)")
+            img.news-banner__image(src="images/vertical-banner-1.png" alt="Забери курс")
 
 
       .news-vertical

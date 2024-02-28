@@ -3,16 +3,34 @@
   min-height: 383px;
 
 
+  @include xs-block {
+    background-color: #fff;
+    margin-bottom: 20px;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+
   &__wrapper {
     padding: 60px 50px;
     background-color: #fff;
     border-radius: 18px;
     overflow: hidden;
     height: 383px;
+
+    @include xs-block {
+      padding: 20px 0;
+      overflow: visible;
+      height: auto;
+    }
   }
 
   &__overflow {
     //overflow: hidden;
+
+    @include xs-block {
+      overflow: visible;
+    }
   }
 
   &__header {
@@ -24,6 +42,10 @@
     letter-spacing: 0;
     margin-bottom: 33.5px;
     display: inline-block;
+
+    @include xs-block {
+      margin-bottom: 15px;
+    }
   }
 
   .swiper {
@@ -31,6 +53,21 @@
 
     &-slide {
       width: 315px;
+
+      @include xs-block {
+        max-width: 240px;
+      }
+    }
+
+    &-scrollbar {
+      bottom: -20px;
+      background-color: transparent;
+      height: 3px;
+
+      &-drag {
+        background-color: #d0d0d0;
+        border-radius: 0;
+      }
     }
   }
 
@@ -74,6 +111,11 @@
     line-height: 145%;
     color: var(--dark);
     letter-spacing: 0;
+
+    @include xs-block {
+      font-size: 14px;
+      line-height: 145%;
+    }
   }
 
   &__date {
@@ -122,6 +164,12 @@
     width: 100%;
     transition: all .3s ease;
 
+    @include xs-block {
+      font-size: 16px;
+      line-height: 130%;
+      margin-top: 12px;
+    }
+
     &:hover {
       opacity: .7;
     }
@@ -136,6 +184,10 @@
     letter-spacing: -0.01em;
     transition: all .3s ease;
     height: 24px;
+
+    @include xs-block {
+      margin-top: 12px;
+    }
 
     &:hover {
       color: var(--purple);

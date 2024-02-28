@@ -1,5 +1,10 @@
 // TODO Добавить анимации
 section.horizontal-banner
   .container
-    .horizontal-banner__body(style="background-image: url('../images/top-banner.jpg');")
-      a(href="#" title="").button-primary.button-primary--white Забрать бесплатно
+    //- .horizontal-banner__body(style="background-image: url('../images/top-banner.jpg');")
+    //-   a(href="#" title="").button-primary.button-primary--white Забрать бесплатно
+    .news-banner.news-banner--horizontal
+        a(href="#").news-banner__link
+          picture.news-banner__picture
+            source(srcset="images/top-banner-320.png" media="(max-width: 570px)")
+            img.news-banner__image(src="images/top-banner-wide.png" alt="Забери курс")

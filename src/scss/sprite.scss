@@ -4,105 +4,140 @@
 
 .svg-icon--black-right-arrow {
     @extend %svg-common;
-    background-position: 95.89041095890411% 27.272727272727273%;
+    background-position: 65.26315789473684% 88.73239436619718%;
     width: 15px;
     height: 13px;
 }
 
+.svg-icon--call {
+    @extend %svg-common;
+    background-position: 28.26086956521739% 95.45454545454545%;
+    width: 18px;
+    height: 18px;
+}
+
 .svg-icon--clock {
     @extend %svg-common;
-    background-position: 100% 0;
+    background-position: 47.82608695652174% 95.45454545454545%;
     width: 18px;
     height: 18px;
 }
 
 .svg-icon--comments {
     @extend %svg-common;
-    background-position: 71.21212121212122% 35.08771929824562%;
+    background-position: 85.22727272727273% 0;
     width: 22px;
     height: 22px;
 }
 
 .svg-icon--comments-gray {
     @extend %svg-common;
-    background-position: 0 39.285714285714285%;
+    background-position: 59.770114942528735% 0;
     width: 23px;
     height: 23px;
 }
 
 .svg-icon--comments-purple {
     @extend %svg-common;
-    background-position: 36.92307692307692% 0;
+    background-position: 0 65.57377049180327%;
     width: 23px;
     height: 23px;
 }
 
 .svg-icon--comments-white {
     @extend %svg-common;
-    background-position: 36.92307692307692% 40.35087719298246%;
+    background-position: 26.436781609195403% 64.51612903225806%;
     width: 23px;
     height: 22px;
 }
 
 .svg-icon--doubble-black-right-arrow {
     @extend %svg-common;
-    background-position: 0 0;
+    background-position: 0 29.032258064516128%;
     width: 24px;
     height: 22px;
 }
 
 .svg-icon--navigate {
     @extend %svg-common;
-    background-position: 64.28571428571429% 75%;
+    background-position: 81.52173913043478% 67.6923076923077%;
     width: 18px;
     height: 19px;
 }
 
 .svg-icon--pausesvg {
     @extend %svg-common;
-    background-position: 72.3076923076923% 0;
+    background-position: 52.87356321839081% 62.5%;
     width: 23px;
     height: 20px;
 }
 
 .svg-icon--play-black {
     @extend %svg-common;
-    background-position: 93.33333333333333% 47.69230769230769%;
+    background-position: 100% 0;
     width: 13px;
     height: 14px;
 }
 
 .svg-icon--play-black-large {
     @extend %svg-common;
-    background-position: 0 78.94736842105263%;
+    background-position: 82.41758241758242% 35.483870967741936%;
     width: 19px;
     height: 22px;
 }
 
 .svg-icon--play-white {
     @extend %svg-common;
-    background-position: 93.33333333333333% 69.23076923076923%;
+    background-position: 100% 20%;
     width: 13px;
     height: 14px;
 }
 
 .svg-icon--single-black-right-arrow {
     @extend %svg-common;
-    background-position: 25.333333333333332% 77.58620689655173%;
+    background-position: 0 100%;
     width: 13px;
     height: 21px;
 }
 
 .svg-icon--single-white-right-arrow {
     @extend %svg-common;
-    background-position: 42.666666666666664% 77.58620689655173%;
+    background-position: 13.402061855670103% 100%;
     width: 13px;
     height: 21px;
 }
 
+.svg-icon--social-ds {
+    @extend %svg-common;
+    background-position: 31.764705882352942% 0;
+    width: 25px;
+    height: 18px;
+}
+
+.svg-icon--social-tg {
+    @extend %svg-common;
+    background-position: 27.906976744186046% 28.571428571428573%;
+    width: 24px;
+    height: 21px;
+}
+
+.svg-icon--social-vk {
+    @extend %svg-common;
+    background-position: 59.770114942528735% 33.8235294117647%;
+    width: 23px;
+    height: 16px;
+}
+
+.svg-icon--social-yt {
+    @extend %svg-common;
+    background-position: 0 0;
+    width: 27px;
+    height: 18px;
+}
+
 .svg-icon--white-right-arrow {
     @extend %svg-common;
-    background-position: 0 100%;
+    background-position: 80.20833333333333% 87.5%;
     width: 14px;
     height: 12px;
 }

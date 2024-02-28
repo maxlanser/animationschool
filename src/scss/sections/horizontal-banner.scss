@@ -1,6 +1,10 @@
 .horizontal-banner {
   margin-bottom: 30px;
 
+  @include xs-block {
+    margin-bottom: 20px;
+  }
+
   &__body {
     display: flex;
     width: 100%;

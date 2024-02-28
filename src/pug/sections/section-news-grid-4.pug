@@ -1,4 +1,4 @@
-section.section-news-grid.secction-news-grid--4
+section.section-news-grid.section-news-grid--4
   .container
     .section-news-grid__wrapper
       article.news-card
@@ -87,7 +87,10 @@ section.section-news-grid.secction-news-grid--4
             span.news-card__comments-count 125
       .news-banner.news-banner--square
           a(href="#").news-banner__link
-            img(src="images/square-banner-1.png").news-banner__image
+            //img(src="images/square-banner-1.png").news-banner__image
+            picture.news-banner__picture
+              source(srcset="images/square-banner-1-320.png" media="(max-width: 570px)")
+              img.news-banner__image(src="images/square-banner-1.png" alt="Забери курс")
       article.news-card
         .news-card__media
           a(href="#").news-card__media-link

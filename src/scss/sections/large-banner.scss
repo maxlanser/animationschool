@@ -1,3 +1,7 @@
 .large-banner {
   margin-bottom: 30px;
+
+  @include xs-block {
+    margin-bottom: 20px;
+  }
 }
