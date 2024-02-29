@@ -398,11 +398,12 @@
     background-image: url('../images/icons/single-black-right-arrow.svg');
     background-repeat: no-repeat;
     background-position: center center;
+    transform: translateX(2px);
   }
 
   &--left {
     &::after {
-      transform: rotate(180deg);
+      transform: translateX(-2px) rotate(180deg);
     }
   }
 }
@@ -484,13 +485,17 @@
 // }
 
 .news-banner {
-  min-width: 375px;
+  //min-width: 375px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   border-radius: 18px;
   overflow: hidden;
+
+  @include md-block {
+    min-width: auto;
+  }
 
   @include xs-block {
     min-width: 0;
@@ -514,6 +519,7 @@
     display: block;
     height: 100%;
     width: 100%;
+    word-break: break-all;
   }
 
   &__image {
@@ -531,7 +537,7 @@
   }
 
   &--vertical {
-    min-height: 834px;
+    //min-height: 834px;
 
     @include xs-block {
       min-height: 500px;

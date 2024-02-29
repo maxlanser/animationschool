@@ -38,12 +38,24 @@
     font-size: 16px;
     line-height: 130%;
     letter-spacing: 0;
-    width: 30%;
+    width: 19%;
+
+    @include lg-block {
+      width: 50%;
+      order: 2;
+    }
+
+    @include md-block {
+      width: 100%;
+      align-items: center;
+      margin-bottom: 24px;
+    }
 
     @include xs-block {
       width: 100%;
       align-items: center;
       order: 1;
+      margin-bottom: 0;
     }
   }
 
@@ -86,11 +98,21 @@
     justify-self: center;
     padding-top: 11px;
 
+    @include lg-block {
+      width: 100%;
+      order: 1;
+    }
+
+    @include md-block {
+      margin-bottom: 24px;
+    }
+
     @include xs-block {
       width: 100%;
       order: 3;
       padding-top: 0;
       margin-top: 24px;
+      margin-bottom: 0;
     }
   }
 
@@ -119,6 +141,10 @@
 
     &-item {
       margin: 0 10px 0 11px;
+
+      @include sm-block {
+        font-size: 16px;
+      }
 
       @include xs-block {
         font-size: 16px;
@@ -188,7 +214,18 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
-    width: 30%;
+    width: 19%;
+
+
+    @include lg-block {
+      width: 50%;
+      order: 3;
+    }
+
+    @include md-block {
+      width: 100%;
+      align-items: center;
+    }
 
     @include xs-block {
       width: 100%;
@@ -264,6 +301,14 @@
     justify-content: space-between;
     margin-top: 31px;
 
+    @include lg-block {
+      order: 4;
+    }
+
+    @include sm-block {
+      flex-direction: column;
+    }
+
     @include xs-block {
       flex-direction: column;
       order: 4;
@@ -278,6 +323,12 @@
     width: 30%;
     text-align: right;
     margin-top: 15px;
+
+    @include sm-block {
+      order: 3;
+      width: 100%;
+      text-align: center;
+    }
 
     @include xs-block {
       order: 3;
@@ -304,6 +355,10 @@
       display: flex;
       align-items: flex-start;
       justify-content: center;
+
+      @include sm-block {
+        order: 1;
+      }
 
       @include xs-block {
         order: 1;
@@ -339,6 +394,13 @@
     opacity: .5;
     width: 30%;
     margin-top: 15px;
+
+    @include sm-block {
+      order: 2;
+      width: 100%;
+      text-align: center;
+      margin-top: 24px;
+    }
 
     @include xs-block {
       order: 2;

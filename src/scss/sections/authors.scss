@@ -15,6 +15,10 @@
     gap: 30px;
     grid-auto-rows: 424px;
 
+    @include lg-block {
+      grid-auto-rows: 1fr;
+    }
+
     @include xs-block {
       display: flex;
       flex-direction: column;
@@ -44,6 +48,16 @@
   overflow: hidden;
   background-color: #fff;
 
+  @include lg-block {
+    grid-template-columns: 30% auto;
+  }
+
+  @include md-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
   @include xs-block {
 
     & + & {
@@ -56,6 +70,11 @@
   }
 
   &__media {
+
+    @include md-block {
+      max-height: 260px;
+      height: 260px;
+    }
 
 
     @include xs-block {
@@ -159,7 +178,13 @@
     margin-top: auto;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    max-width: 315.35px;
+    width: 100%;
+
+    @include md-block {
+      margin-top: 30px;
+    }
 
     @include xs-block {
       margin-top: 30px;
@@ -215,7 +240,7 @@
     display: inline-block;
     position: relative;
     padding-left: 23px;
-    margin-left: 87px;
+    margin-left: auto;
 
     @include xs-block {
       margin-left: auto;
@@ -301,6 +326,9 @@
     align-items: flex-start;
     justify-content: flex-start;
 
+    @include md-block {
+      padding: 20px 15px 20px 15px;
+    }
 
     @include xs-block {
       padding: 20px 15px 20px 15px;

@@ -16,7 +16,7 @@
 
     .news-vertical {
       grid-column: 4 / 5;
-      grid-row: 1 / 2;
+      grid-row: 1 / 3;
 
       @include xs-block {
         margin-top: 20px;
@@ -34,7 +34,7 @@
 
     .news-banner--vertical {
       grid-column: 3 / 4;
-      grid-row: 1 / 2;
+      grid-row: 1 / 3;
 
       @include xs-block {
         margin-top: 20px;
@@ -44,7 +44,7 @@
 
     .news-vertical {
       grid-column: 4 / 5;
-      grid-row: 1 / 2;
+      grid-row: 1 / 3;
     }
   }
 
@@ -82,6 +82,14 @@
     grid-auto-rows: 402px;
     gap: 30px;
 
+    @include to(1400px) {
+      gap: 10px;
+    }
+
+    @include to(1300px) {
+      grid-auto-rows: minmax(402px, auto);
+    }
+
     @include xs-block {
       display: flex;
       flex-direction: column;
@@ -93,9 +101,10 @@
 
 .news-slider {
   min-height: 402px;
-  height: 402px;
+  //height: 402px;
   max-width: 780px;
-  width: 780px;
+  //width: 780px;
+  width: 100%;
   border-radius: 18px;
   overflow: hidden;
   margin-left: 0;
@@ -121,6 +130,7 @@
 
   &__item {
     position: relative;
+    height: 100%;
 
     &:hover {
       .news-slider__picture {
@@ -137,6 +147,7 @@
 
   &__media {
     position: relative;
+    height: 100%;
 
     &::after {
       display: block;
@@ -178,6 +189,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    @include to(1400px) {
+      width: 60%;
+    }
 
     @include xs-block {
       top: 0px;
@@ -278,6 +293,11 @@
       color: var(--yellow);
     }
 
+    @include to(1400px) {
+      font-size: 24px;
+      width: 100%;
+    }
+
     @include xs-block {
       font-size: 18px;
       text-align: left;
@@ -348,7 +368,7 @@
 
 .news-vertical {
   padding: 30px;
-  min-height: 834px;
+  //min-height: 834px;
   height: 100%;
   background-color: #fff;
   border-radius: 18px;
@@ -372,6 +392,7 @@
     color: var(--dark);
     font-weight: 700;
     margin-bottom: 30px;
+    word-break: break-all;
 
     @include xs-block {
       margin-bottom: 20px;
@@ -421,6 +442,11 @@
     transition: all .3s ease;
     position: relative;
     margin-top: auto;
+
+    @include lg-block {
+      font-size: 18px;
+      margin-top: 15px;
+    }
 
     @include xs-block {
       margin-top: 30px;
