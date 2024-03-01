@@ -54,66 +54,72 @@ section.section-news-grid.section-news-grid--1
         .swiper-button-prev.js-news-slider__prev
         .swiper-pagination.js-news-slider__pagination
 
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/1.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 10.01
-            a(href="#").news-card__category 2D анимация
-          a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
+      //- article.news-card
+      //-   .
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/1.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 10.01
+      //-       a(href="#").news-card__category 2D анимация
+      //-     a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
 
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/2.jpg" alt="Что такое Культ? И как его создать сценаристу в своей истории?")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 14.01
-            a(href="#").news-card__category Культ
-          a(href="#").news-card__link Что такое Культ? И как его создать сценаристу в своей истории?
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
+      +newscard("1.jpg", "10.01", "2D анимация", "Новая волна анимации: как технологии меняют мир мультфильмов", 120)
+      +newscard("2.jpg", "14.01", "Культ", "Что такое Культ? И как его создать сценаристу в своей истории?", 125)
+      +newscard("3.jpg", "22.01", "2D анимация", "Кто такой 2D аниматор?", 125)
+      +newscard("4.jpg", "08.02", "3D анимация", "Как создаются 3D мультфильмы", 120)
+
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/2.jpg" alt="Что такое Культ? И как его создать сценаристу в своей истории?")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 14.01
+      //-       a(href="#").news-card__category Культ
+      //-     a(href="#").news-card__link Что такое Культ? И как его создать сценаристу в своей истории?
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
 
 
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/3.jpg" alt="Кто такой 2D аниматор?")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 22.01
-            a(href="#").news-card__category 2D анимация
-          a(href="#").news-card__link Кто такой 2D аниматор?
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/3.jpg" alt="Кто такой 2D аниматор?")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 22.01
+      //-       a(href="#").news-card__category 2D анимация
+      //-     a(href="#").news-card__link Кто такой 2D аниматор?
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
 
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/4.jpg" alt="Как создаются 3D мультфильмы")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 08.02
-            a(href="#").news-card__category 3D анимация
-          a(href="#").news-card__link Как создаются 3D мультфильмы
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/4.jpg" alt="Как создаются 3D мультфильмы")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 08.02
+      //-       a(href="#").news-card__category 3D анимация
+      //-     a(href="#").news-card__link Как создаются 3D мультфильмы
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
 
 
       .news-vertical

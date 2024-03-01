@@ -22,50 +22,54 @@ section.section-news-grid.section-news-grid--2
       //-         include ../../images/icons/comments-gray.svg
       //-       span.news-card__comments-count 125
 
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/2-2.jpg" alt="Что такое Культ? И как его создать сценаристу в своей истории?")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 08.01
-            a(href="#").news-card__category Анимация
-          a(href="#").news-card__link Что такое Культ? И как его создать сценаристу в своей истории?
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
 
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/2-3.jpg" alt="Кто такой 2D аниматор?")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 08.01
-            a(href="#").news-card__category Анимация
-          a(href="#").news-card__link Кто такой 2D аниматор?
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
+      +newscard("2-2.jpg", "08.01", "Анимация", "Что такое Культ? И как его создать сценаристу в своей истории?", 125)
+      +newscard("2-3.jpg", "08.01", "2D анимация", "Кто такой 2D аниматор?", 125)
+      +newscard("2-4.jpg", "10.01", "Анимация", "Как создаются 3D мультфильмы", 125)
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/2-2.jpg" alt="Что такое Культ? И как его создать сценаристу в своей истории?")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 08.01
+      //-       a(href="#").news-card__category Анимация
+      //-     a(href="#").news-card__link Что такое Культ? И как его создать сценаристу в своей истории?
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
 
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/2-4.jpg" alt="Как создаются 3D мультфильмы")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 08.01
-            a(href="#").news-card__category Анимация
-          a(href="#").news-card__link Как создаются 3D мультфильмы
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/2-3.jpg" alt="Кто такой 2D аниматор?")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 08.01
+      //-       a(href="#").news-card__category Анимация
+      //-     a(href="#").news-card__link Кто такой 2D аниматор?
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
+
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/2-4.jpg" alt="Как создаются 3D мультфильмы")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 08.01
+      //-       a(href="#").news-card__category Анимация
+      //-     a(href="#").news-card__link Как создаются 3D мультфильмы
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
 
       .news-banner.news-banner--vertical
         a(href="#").news-banner__link

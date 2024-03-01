@@ -169,6 +169,11 @@
     background-color: var(--dark);
     align-items: center;
     justify-content: center;
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: var(--yellow);
+    }
   }
 }
 
@@ -194,6 +199,14 @@
       font-size: 18px;
       margin: 0 0 15px 0;
       width: 100%;
+    }
+
+    a {
+      transition: color .3s ease;
+
+      &:hover {
+        color: var(--yellow);
+      }
     }
 
     &:last-child {

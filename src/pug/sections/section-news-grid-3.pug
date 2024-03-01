@@ -7,76 +7,87 @@ section.section-news-grid.section-news-grid--3
         .news-banner__info.news-card__info
           span.news-card__date 10.01
           a(href="#").news-card__category Анимация
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/2.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 10.01
-            a(href="#").news-card__category 2D анимация
-          a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/3.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 10.01
-            a(href="#").news-card__category 2D анимация
-          a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/3.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 10.01
-            a(href="#").news-card__category 2D анимация
-          a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/4.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 10.01
-            a(href="#").news-card__category 2D анимация
-          a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
-      article.news-card
-        .news-card__media
-          a(href="#").news-card__media-link
-            picture.news-card__picture
-              img.news-card__image(src="images/news/4.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
-        .news-card__body
-          .news-card__info
-            span.news-card__date 10.01
-            a(href="#").news-card__category 2D анимация
-          a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
-          a(href="#").news-card__comments
-            i.news-card__comments-icon
-              include ../../images/icons/comments-gray.svg
-            span.news-card__comments-count 125
+
+      +newscard("1.jpg", "10.01", "2D анимация", "Новая волна анимации: как технологии меняют мир мультфильмов", 125)
+      +newscard("2.jpg", "10.01", "2D анимация", "Новая волна анимации: как технологии меняют мир мультфильмов", 125)
+      +newscard("3.jpg", "10.01", "2D анимация", "Новая волна анимации: как технологии меняют мир мультфильмов", 125)
+      +newscard("3.jpg", "10.01", "2D анимация", "Новая волна анимации: как технологии меняют мир мультфильмов", 125)
+      +newscard("4.jpg", "10.01", "2D анимация", "Новая волна анимации: как технологии меняют мир мультфильмов", 125)
+
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/2.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 10.01
+      //-       a(href="#").news-card__category 2D анимация
+      //-     a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
+
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/3.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 10.01
+      //-       a(href="#").news-card__category 2D анимация
+      //-     a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
+
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/3.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 10.01
+      //-       a(href="#").news-card__category 2D анимация
+      //-     a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
+
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/4.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 10.01
+      //-       a(href="#").news-card__category 2D анимация
+      //-     a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
+
+      //- article.news-card
+      //-   .news-card__media
+      //-     a(href="#").news-card__media-link
+      //-       picture.news-card__picture
+      //-         img.news-card__image(src="images/news/4.jpg" alt="Новая волна анимации: как технологии меняют мир мультфильмов")
+      //-   .news-card__body
+      //-     .news-card__info
+      //-       span.news-card__date 10.01
+      //-       a(href="#").news-card__category 2D анимация
+      //-     a(href="#").news-card__link Новая волна анимации: как технологии меняют мир мультфильмов
+      //-     a(href="#").news-card__comments
+      //-       i.news-card__comments-icon
+      //-         include ../../images/icons/comments-gray.svg
+      //-       span.news-card__comments-count 125
 
 
       .news-banner.news-banner--vertical

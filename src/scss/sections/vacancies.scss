@@ -146,6 +146,18 @@
       //   transform: translate(-150px, -230px) scale(120);
       // }
     //}
+
+
+    .vacancy__geo {
+
+      color: var(--dark);
+
+      &-icon {
+        svg path {
+          stroke: var(--dark)
+        }
+      }
+    }
   }
 
   &__organization {
@@ -162,8 +174,12 @@
   &__geo {
     font-size: 16px;
     line-height: 145%;
-    opacity: .5;
+    //opacity: .5;
     margin-top: 14px;
+    color: rgba($color: #222, $alpha: 0.5);
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
 
     @include xs-block {
       font-size: 14px;
@@ -171,10 +187,15 @@
     }
 
     &-icon {
-      height: 14px;
-      width: 14px;
-      vertical-align: middle;
-      margin-right: 2px;
+      display: inline-block;
+      height: 17px;
+      width: 16px;
+      margin-right: 8px;
+
+
+      svg path {
+        transition: all .3s ease;
+      }
     }
   }
 
