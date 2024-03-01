@@ -161,6 +161,11 @@
       text-decoration: underline;
       text-underline-offset: 5px;
       color: #fff;
+      transition: all .3s ease;
+
+      &:hover {
+        text-decoration: none;
+      }
 
       @include xs-block {
         text-underline-offset: 3px;
@@ -341,6 +346,11 @@
       color: #fff;
       text-decoration: underline;
       text-underline-offset: 5px;
+      transition: all .3s ease;
+
+      &:hover {
+        text-decoration: none;
+      }
 
       @include xs-block {
         text-underline-offset: 3px;
@@ -414,6 +424,11 @@
       text-decoration: underline;
       text-underline-offset: 4px;
       color: #fff;
+      transition: all .3s ease;
+
+      &:hover {
+        text-decoration: none;
+      }
 
       @include xs-block {
         text-underline-offset: 3px;
