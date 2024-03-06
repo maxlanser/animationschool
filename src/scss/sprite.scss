@@ -2,192 +2,192 @@
     background: url("../images/icons/sprite.svg") no-repeat;
 }
 
-.svg-icon--black-right-arrow {
+.icon--black-right-arrow {
     @extend %svg-common;
-    background-position: 33.78378378378378% 35.13513513513514%;
-    width: 15px;
+    background-position: 31.08108108108108% 35.922330097087375%;
+    width: 13px;
+    height: 11px;
+}
+
+.icon--black-right-menu-arrow {
+    @extend %svg-common;
+    background-position: 46.05263157894737% 52.475247524752476%;
+    width: 7px;
     height: 13px;
 }
 
-.svg-icon--black-right-menu-arrow {
+.icon--call {
     @extend %svg-common;
-    background-position: 50.43859649122807% 52.293577981651374%;
-    width: 9px;
-    height: 15px;
-}
-
-.svg-icon--call {
-    @extend %svg-common;
-    background-position: 60.273972602739725% 74.52830188679245%;
-    width: 18px;
-    height: 18px;
-}
-
-.svg-icon--clock {
-    @extend %svg-common;
-    background-position: 68.4931506849315% 74.52830188679245%;
-    width: 18px;
-    height: 18px;
-}
-
-.svg-icon--comments {
-    @extend %svg-common;
-    background-position: 0 100%;
-    width: 22px;
-    height: 22px;
-}
-
-.svg-icon--comments-gray {
-    @extend %svg-common;
-    background-position: 0 78.21782178217822%;
-    width: 23px;
-    height: 23px;
-}
-
-.svg-icon--comments-purple {
-    @extend %svg-common;
-    background-position: 10.74766355140187% 78.21782178217822%;
-    width: 23px;
-    height: 23px;
-}
-
-.svg-icon--comments-white {
-    @extend %svg-common;
-    background-position: 21.49532710280374% 77.45098039215686%;
-    width: 23px;
-    height: 22px;
-}
-
-.svg-icon--doubble-black-right-arrow {
-    @extend %svg-common;
-    background-position: 0 55.88235294117647%;
-    width: 24px;
-    height: 22px;
-}
-
-.svg-icon--header-ds {
-    @extend %svg-common;
-    background-position: 43.51851851851852% 52.77777777777778%;
-    width: 21px;
+    background-position: 54.794520547945204% 74.48979591836735%;
+    width: 16px;
     height: 16px;
 }
 
-.svg-icon--header-logo {
+.icon--clock {
     @extend %svg-common;
-    background-position: 0 0;
-    width: 237px;
-    height: 39px;
+    background-position: 62.10045662100457% 74.48979591836735%;
+    width: 16px;
+    height: 16px;
 }
 
-.svg-icon--header-tg {
+.icon--comments {
     @extend %svg-common;
-    background-position: 42.7906976744186% 75.23809523809524%;
-    width: 22px;
-    height: 19px;
-}
-
-.svg-icon--header-vk {
-    @extend %svg-common;
-    background-position: 24.299065420560748% 35.45454545454545%;
-    width: 23px;
-    height: 14px;
-}
-
-.svg-icon--header-yt {
-    @extend %svg-common;
-    background-position: 22.429906542056074% 53.271028037383175%;
-    width: 23px;
-    height: 17px;
-}
-
-.svg-icon--navigate {
-    @extend %svg-common;
-    background-position: 52.054794520547944% 75.23809523809524%;
-    width: 18px;
-    height: 19px;
-}
-
-.svg-icon--pausesvg {
-    @extend %svg-common;
-    background-position: 32.242990654205606% 75.96153846153847%;
-    width: 23px;
+    background-position: 0 100%;
+    width: 20px;
     height: 20px;
 }
 
-.svg-icon--play-black {
+.icon--comments-gray {
     @extend %svg-common;
-    background-position: 55.357142857142854% 51.81818181818182%;
-    width: 13px;
-    height: 14px;
+    background-position: 0 78.49462365591398%;
+    width: 21px;
+    height: 21px;
 }
 
-.svg-icon--play-black-large {
+.icon--comments-purple {
     @extend %svg-common;
-    background-position: 10.091743119266056% 100%;
+    background-position: 9.813084112149532% 78.49462365591398%;
+    width: 21px;
+    height: 21px;
+}
+
+.icon--comments-white {
+    @extend %svg-common;
+    background-position: 19.626168224299064% 77.65957446808511%;
+    width: 21px;
+    height: 20px;
+}
+
+.icon--doubble-black-right-arrow {
+    @extend %svg-common;
+    background-position: 0 56.38297872340426%;
+    width: 22px;
+    height: 20px;
+}
+
+.icon--header-ds {
+    @extend %svg-common;
+    background-position: 39.81481481481482% 53%;
     width: 19px;
-    height: 22px;
-}
-
-.svg-icon--play-white {
-    @extend %svg-common;
-    background-position: 61.160714285714285% 51.81818181818182%;
-    width: 13px;
     height: 14px;
 }
 
-.svg-icon--single-black-right-arrow {
+.icon--header-logo {
     @extend %svg-common;
-    background-position: 18.303571428571427% 99.02912621359224%;
-    width: 13px;
-    height: 21px;
+    background-position: 0 0;
+    width: 235px;
+    height: 37px;
 }
 
-.svg-icon--single-white-right-arrow {
+.icon--header-tg {
     @extend %svg-common;
-    background-position: 24.107142857142858% 99.02912621359224%;
-    width: 13px;
-    height: 21px;
+    background-position: 39.06976744186046% 75.25773195876289%;
+    width: 20px;
+    height: 17px;
 }
 
-.svg-icon--social-ds {
+.icon--header-vk {
     @extend %svg-common;
-    background-position: 12.735849056603774% 36.79245283018868%;
-    width: 25px;
+    background-position: 22.429906542056074% 36.27450980392157%;
+    width: 21px;
+    height: 12px;
+}
+
+.icon--header-yt {
+    @extend %svg-common;
+    background-position: 20.560747663551403% 53.535353535353536%;
+    width: 21px;
+    height: 15px;
+}
+
+.icon--navigate {
+    @extend %svg-common;
+    background-position: 47.48858447488585% 75.25773195876289%;
+    width: 16px;
+    height: 17px;
+}
+
+.icon--pausesvg {
+    @extend %svg-common;
+    background-position: 29.439252336448597% 76.04166666666667%;
+    width: 21px;
     height: 18px;
 }
 
-.svg-icon--social-tg {
+.icon--play-black {
     @extend %svg-common;
-    background-position: 11.267605633802816% 55.33980582524272%;
-    width: 24px;
-    height: 21px;
+    background-position: 50% 51.96078431372549%;
+    width: 11px;
+    height: 12px;
 }
 
-.svg-icon--social-vk {
+.icon--play-black-large {
     @extend %svg-common;
-    background-position: 33.177570093457945% 52.77777777777778%;
+    background-position: 9.174311926605505% 100%;
+    width: 17px;
+    height: 20px;
+}
+
+.icon--play-white {
+    @extend %svg-common;
+    background-position: 54.910714285714285% 51.96078431372549%;
+    width: 11px;
+    height: 12px;
+}
+
+.icon--single-black-right-arrow {
+    @extend %svg-common;
+    background-position: 16.517857142857142% 98.94736842105263%;
+    width: 11px;
+    height: 19px;
+}
+
+.icon--single-white-right-arrow {
+    @extend %svg-common;
+    background-position: 21.428571428571427% 98.94736842105263%;
+    width: 11px;
+    height: 19px;
+}
+
+.icon--social-ds {
+    @extend %svg-common;
+    background-position: 11.79245283018868% 37.755102040816325%;
     width: 23px;
     height: 16px;
 }
 
-.svg-icon--social-yt {
+.icon--social-tg {
     @extend %svg-common;
-    background-position: 0 36.79245283018868%;
-    width: 27px;
-    height: 18px;
+    background-position: 10.328638497652582% 55.78947368421053%;
+    width: 22px;
+    height: 19px;
 }
 
-.svg-icon--white-right-arrow {
+.icon--social-vk {
     @extend %svg-common;
-    background-position: 40.35874439461883% 34.82142857142857%;
-    width: 14px;
-    height: 12px;
+    background-position: 30.373831775700936% 53%;
+    width: 21px;
+    height: 14px;
 }
 
-.svg-icon--yellow-down-arrow {
+.icon--social-yt {
     @extend %svg-common;
-    background-position: 46.017699115044245% 33.91304347826087%;
-    width: 11px;
-    height: 9px;
+    background-position: 0 37.755102040816325%;
+    width: 25px;
+    height: 16px;
+}
+
+.icon--white-right-arrow {
+    @extend %svg-common;
+    background-position: 36.771300448430495% 35.57692307692308%;
+    width: 12px;
+    height: 10px;
+}
+
+.icon--yellow-down-arrow {
+    @extend %svg-common;
+    background-position: 41.5929203539823% 34.57943925233645%;
+    width: 9px;
+    height: 7px;
 }
 

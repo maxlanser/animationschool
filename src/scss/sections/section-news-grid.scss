@@ -18,6 +18,11 @@
       grid-column: 4 / 5;
       grid-row: 1 / 3;
 
+      @include lg-block {
+        grid-column: 1 / 4;
+        grid-row: auto;
+      }
+
       @include xs-block {
         margin-top: 20px;
       }
@@ -45,6 +50,11 @@
     .news-vertical {
       grid-column: 4 / 5;
       grid-row: 1 / 3;
+
+      @include lg-block {
+        grid-column: 1 / 4;
+        grid-row: auto;
+      }
     }
   }
 
@@ -52,6 +62,11 @@
     .news-banner--vertical {
       grid-column: 4 / 5;
       grid-row: 1 / 3;
+
+      // @include lg-block {
+      //   grid-column: 1 / 4;
+      //   grid-row: auto;
+      // }
 
       @include xs-block {
         margin-top: 20px;
@@ -88,6 +103,10 @@
 
     @include to(1300px) {
       grid-auto-rows: minmax(402px, auto);
+    }
+
+    @include lg-block {
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
     @include xs-block {
@@ -366,114 +385,5 @@
 // }
 
 
-.news-vertical {
-  padding: 30px;
-  //min-height: 834px;
-  height: 100%;
-  background-color: #fff;
-  border-radius: 18px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  @include xs-block {
-    padding: 20px;
-    min-height: 0;
-    border-radius: 14px;
-  }
-
-  &__header {
-    font-size: 30px;
-    font-family: var(--ff-title);
-    line-height: 120%;
-    letter-spacing: 0;
-    color: var(--dark);
-    font-weight: 700;
-    margin-bottom: 30px;
-    word-break: break-all;
-
-    @include xs-block {
-      margin-bottom: 20px;
-    }
-  }
-
-  &__list {
-    list-style: none;
-  }
-
-  &__item {
-    margin-bottom: 30px;
-
-    .news-card__meta {
-      font-size: 16px;
-      line-height: 130%;
-    }
-
-    .news-card__link {
-      margin-top: 12px;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  // &__meta {
-  //   font-size: 16px;
-  //   line-height: 130%;
-  // }
-
-  // &__link {
-  //   margin-top: 12px;
-  // }
-
-  &__readmore {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 20px;
-    line-height: 145%;
-    font-family: var(--ff-gilroy);
-    font-weight: 500;
-    color: var(--dark);
-    letter-spacing: 0;
-    transition: all .3s ease;
-    position: relative;
-    margin-top: auto;
-
-    @include lg-block {
-      font-size: 18px;
-      margin-top: 15px;
-    }
-
-    @include xs-block {
-      margin-top: 30px;
-    }
-
-    &::after {
-      display: block;
-      content: '';
-      height: 20.24px;
-      width: 20.24px;
-      border-radius: 7.12px;
-      background-color: var(--dark);
-      background-image: url('../images/icons/white-right-arrow.svg');
-      background-position: center center;
-      background-repeat: no-repeat;
-      margin-left: 10.57px;
-      transition: all .3s ease;
-    }
-
-    &:hover {
-      color: var(--purple);
-
-      &::after {
-        background-color: var(--purple);
-      }
-    }
-  }
-}
 
 

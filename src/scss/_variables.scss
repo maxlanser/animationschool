@@ -1,57 +1,12 @@
-$laptop-l: 1500px;
-$laptop: 1100px;
-$tablet: 992px;
-$tablet-l: 962px;
-$tablet-m: 768px;
-
-$desktop-l: 1800px;
-$desktop-m: 1500px;
-$desktop-s: 1280px;
-
-$mobile-l: 450px;
-$mobile-m: 390px;
-$mobile-s: 330px;
-
-$w-burger: $tablet;
-
 :root {
-  --base-size: 1vw;//#{"calc(1vw + 1vh)"};
-  @media (min-width: $mobile-l + 1) and (max-width: $tablet) {
-    --base-size: #{"calc(1vw + 1vh)"};
-  }
-  --tr: 0.3s;
-  --tr-regular: all var(--tr) ease;
+  --yellow: #E7AE44;
+  --dark: #222;
+  --gray-bg: #F4F5F6;
+  --blue: #294FD6;
+  --purple: #7241FF;
 
-  --regular-column-left: 93.3rem;
-  --regular-column-right: 64.4rem;
-  --regular-columns: var(--regular-column-left) var(--regular-column-right);
-
-  @media (max-width: $desktop-s) {
-    --regular-column-left: 83.3rem;
-    // --regular-column-right: 54.4rem;
-    --regular-column-right: 58.4rem;
-  }
-  @media (max-width: $tablet) {
-    --regular-column-left: 43.3rem;
-  }
-  @media (max-width: $tablet-m) {
-    --regular-column-left: 53.3rem;
-  }
-
-  // Fonts
   --ff-regular: "Inter", sans-serif;
   --ff-title: "Craftwork", sans-serif;
-  --ff-controls: "Gilroy", sans-serif;
-
-  // Widths
-  --w-container: 1440px;
-  @media (max-width: $desktop-m) {
-    --w-container: 1260px;
-  }
-  @media (max-width: $desktop-s) {
-    --w-container: 892px;
-  }
-  @media (max-width: 768px) {
-    --w-container: 100%;
-  }
+  --ff-button: "Vela Sans", sans-serif;
+  --ff-gilroy: "Gilroy", sans-serif;
 }

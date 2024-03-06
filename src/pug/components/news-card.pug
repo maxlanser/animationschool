@@ -1,0 +1,16 @@
+mixin newscard(image, date, cat, title, comm)
+  article.news-card
+    a(href="#").news-card__link
+      .news-card__media
+        //a(href="#").news-card__media-link
+        picture.news-card__picture
+          img.news-card__image(src="images/news/" + image alt=title)
+      .news-card__body
+        .news-card__info
+          span.news-card__date= date
+          span.news-card__category= cat
+        h4.news-card__title= title
+        .news-card__comments
+          i.news-card__comments-icon
+            include ../../images/icons/comments-gray.svg
+          span.news-card__comments-count= comm
