@@ -33,7 +33,7 @@
     display: block;
     height: 100%;
     width: 100%;
-    word-break: break-all;
+    word-break: break-word;
   }
 
   &__image {
@@ -95,7 +95,8 @@
     &:hover {
       .news-card__category {
         //transform: translateY(2px);
-        color: var(--purple);
+        //color: var(--purple);
+        color: #fff;
         text-decoration: underline;
         text-underline-offset: 4px;
       }
@@ -132,7 +133,9 @@
         color: #fff;
 
         &:hover {
-          color: var(--purple);
+          //color: var(--purple);
+          color: #fff;
+          opacity: 1;
         }
       }
     }

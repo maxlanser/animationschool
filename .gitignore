@@ -7,5 +7,6 @@ dev
 ._*
 .Spotlight-V100
 .Trashes
+*.zip
 ehthumbs.db
 Thumbs.db
