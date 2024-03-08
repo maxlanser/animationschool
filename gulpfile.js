@@ -212,4 +212,6 @@ exports.default = series(parallel(
   //images2avif,
   //fonts2woff,
   //fonts2woff2
-  ), bSync, watching);
+  ),
+  series(bSync, watching)
+);
