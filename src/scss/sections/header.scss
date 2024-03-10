@@ -3,12 +3,12 @@
 
   .container {
 
-    @include xs-block {
+    @include to(700px) {
       padding: 0;
     }
   }
 
-  @include xs-block {
+  @include to(700px) {
     padding: 0;
     height: 75px;
   }
@@ -21,11 +21,12 @@
     border-radius: 20px;
     background-color: #fff;
 
-    @include xs-block {
+    @include to(700px) {
       border-radius: 0;
       height: 60px;
       padding: 12px 20px;
-      position: absolute;
+      //position: absolute;
+      position: fixed;
       z-index: 12;
       width: 100%;
     }
@@ -36,7 +37,7 @@
     align-items: center;
     justify-content: flex-end;
 
-    @include xs-block {
+    @include to(700px) {
       position: fixed;
       left: 0;
       bottom: 0;
@@ -65,7 +66,7 @@
     display: block;
     height: 37px;
 
-    @include xs-block {
+    @include to(700px) {
       width: 154px;
       height: 24px;
 
@@ -80,7 +81,7 @@
     margin-left: auto;
     letter-spacing: 0;
 
-    @include xs-block {
+    @include to(700px) {
       margin-left: 0;
       width: 100%;
       height: 100%;
@@ -136,7 +137,7 @@
     }
 
 
-    @include xs-block {
+    @include to(700px) {
       display: block;
     }
   }
@@ -148,7 +149,7 @@
     justify-content: flex-end;
     margin-left: 40px;
 
-    @include xs-block {
+    @include to(700px) {
       margin-left: 0;
     }
   }
@@ -183,7 +184,7 @@
   align-items: center;
   justify-content: flex-start;
 
-  @include xs-block {
+  @include to(700px) {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -195,7 +196,7 @@
     font-size: 18px;
     line-height: 130%;
 
-    @include xs-block {
+    @include to(700px) {
       font-size: 18px;
       margin: 0 0 15px 0;
       width: 100%;
@@ -216,7 +217,7 @@
     &.menu-item-has-children {
       position: relative;
 
-      @include xs-block {
+      @include to(700px) {
         .sub-menu {
           top: 30px;
           padding-top: 0;
@@ -260,7 +261,7 @@
         position: relative;
         padding-right: 17px;
 
-        @include xs-block {
+        @include to(700px) {
           width: 100%;
           &::after {
             background-image: url("../images/icons/black-right-menu-arrow.svg");
@@ -284,7 +285,7 @@
         }
       }
 
-      @include from(562px) {
+      @include from(701px) {
         &:hover {
           .sub-menu {
             top: 100%;
@@ -321,7 +322,7 @@
       line-height: 100%;
       padding: 15px 0;
 
-      @include xs-block {
+      @include to(700px) {
         padding: 15px 0;
         margin: 0;
       }

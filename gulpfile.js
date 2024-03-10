@@ -16,6 +16,8 @@ const babel = require("gulp-babel");
 const concat = require('gulp-concat');
 const gulpBabelMinify = require('gulp-babel-minify');
 const gcmq = require('gulp-group-css-media-queries');
+const jmq = require('gulp-join-media-queries');
+const cmq = require('crlab-gulp-combine-media-queries');
 const argv = require('yargs').argv;
 const gulpif = require('gulp-if');
 const w3cjs = require('gulp-w3cjs');
@@ -179,7 +181,8 @@ function styles() {
     .pipe(autoprefixer({
 			cascade: false
 		}))
-    .pipe(gulpif(isProduction, gcmq()))
+    //.pipe(gulpif(isProduction, gcmq()))
+    .pipe(gcmq())
     .pipe(rename('style.css'))
     .pipe(gulpif(!isProduction, sourcemaps.write('.')))
     .pipe(dest('./dev/css'))
