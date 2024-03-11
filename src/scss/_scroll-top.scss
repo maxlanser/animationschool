@@ -1,0 +1,26 @@
+.scroll-top__button {
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background-color: #E78944;
+  transition: all .3s ease;
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #F68838;
+  }
+
+  &--active {
+    opacity: 1;
+    bottom: 30px;
+    pointer-events: all;
+  }
+}
