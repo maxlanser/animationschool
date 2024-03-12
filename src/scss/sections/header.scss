@@ -1,10 +1,16 @@
 .header {
   padding: 40px 0;
+  height: 159px;
 
   .container {
+    box-sizing: content-box;
+    width: calc(100% - 30px);
+    max-width: 1590px;
 
     @include to(700px) {
       padding: 0;
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 
@@ -20,15 +26,38 @@
     justify-content: space-between;
     border-radius: 20px;
     background-color: #fff;
+    transition: all .3s ease;
+
+    &--fixed {
+      position: fixed;
+      z-index: 12;
+      top: -105%;
+      opacity: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      width: inherit;
+      max-width: inherit;
+    }
+
+    &--show {
+      top: 0;
+      opacity: 1;
+    }
+
+
+
 
     @include to(700px) {
       border-radius: 0;
       height: 60px;
       padding: 12px 20px;
-      //position: absolute;
-      position: fixed;
+      position: absolute;
       z-index: 12;
       width: 100%;
+
+      &--fixed {
+        position: fixed;
+      }
     }
   }
 

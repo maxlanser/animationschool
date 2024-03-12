@@ -19,9 +19,16 @@ body {
   font-family: var(--ff-regular);
   font-weight: 400;
 
-  &.is-locked {
-    overflow: hidden;
-    touch-action: none;
+  @include to(700px) {
+    &.is-locked {
+      overflow: hidden;
+      touch-action: none;
+
+
+      .scroll-top__button {
+        display: none;
+      }
+    }
   }
 }
 
