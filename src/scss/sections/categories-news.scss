@@ -21,7 +21,19 @@
       height: auto;
 
       @include xs-block {
+        display: flex;
         flex-direction: column;
+        gap: 0;
+      }
+
+      @include sm-block {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include lg-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
       }
     }
 
@@ -31,10 +43,15 @@
 
       @include xs-block {
         margin-bottom: 15px;
+        width: 100%;
 
         &:last-child {
           margin-bottom: 0;
         }
+      }
+
+      @include lg-block {
+
       }
     }
   }
@@ -43,7 +60,7 @@
     right: 0;
     transform: translateX(50%);
 
-    @include xs-block {
+    @include lg-block {
       display: none;
     }
   }
@@ -52,7 +69,7 @@
     left: 0;
     transform: translateX(-50%);
 
-    @include xs-block {
+    @include lg-block {
       display: none;
     }
   }

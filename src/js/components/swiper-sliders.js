@@ -1,5 +1,5 @@
 (function(){
-  const breakpoint = window.matchMedia( '(min-width:561px)' );
+  const breakpoint = window.matchMedia( '(min-width:1101px)' );
 
   let categoriesSwiper;
 
@@ -94,7 +94,7 @@
           }
         },
         561: {
-          slidesPerView: 4,
+          slidesPerView: 2,
           spaceBetween: 30,
           navigation: {
             nextEl: ".js-vacancies__slider-next",
@@ -104,6 +104,25 @@
             enabled: false
           }
 
+        },
+        780: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          navigator: {
+            nextEl: ".js-vacancies__slider-next",
+            prevEl: ".js-vacancies__slider-prev"
+          }
+        },
+        1100: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          navigation: {
+            nextEl: ".js-vacancies__slider-next",
+            prevEl: ".js-vacancies__slider-prev",
+          },
+          scrollbar: {
+            enabled: false
+          }
         }
       }
     });

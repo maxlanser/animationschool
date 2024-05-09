@@ -46,6 +46,11 @@
     @include xs-block {
       margin-bottom: 15px;
     }
+
+    @include sm-block {
+      display: block;
+      //padding-right: 95px;
+    }
   }
 
   .swiper {
