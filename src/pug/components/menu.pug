@@ -1,0 +1,82 @@
+-
+  const menu = [
+    {
+      title: 'Рубрики',
+      url: '#',
+      submenu: [
+        {
+          title: 'Новости',
+          url: '#'
+        },
+        {
+          title: 'Статьи',
+          url: '#'
+        },
+        {
+          title: 'Подкасты',
+          url: '#'
+        },
+        {
+          title: 'Видео',
+          url: '#'
+        }
+      ]
+    },
+    {
+      title: 'Индустрия',
+      url: '#',
+      submenu: [
+        {
+          title: 'Вакансии',
+          url: '#'
+        },
+        {
+          title: 'Студии',
+          url: '#'
+        },
+        {
+          title: 'Персоны',
+          url: '#'
+        },
+        {
+          title: 'Мероприятия',
+          url: '#'
+        }
+      ]
+    },
+    {
+      title: 'Курсы',
+      url: '#'
+    },
+    {
+      title: 'Профессии',
+      url: '#'
+    },
+    {
+      title: 'Преподаватели',
+      url: '#'
+    },
+    {
+      title: 'Работы студентов',
+      url: '#'
+    },
+    {
+      title: 'Студии',
+      url: '#'
+    },
+    {
+      title: 'О клубе',
+      url: '#'
+    },
+  ]
+
+nav.header__nav
+  ul.menu
+    each item in menu
+      li(class= 'menu-item' + (item.submenu ? ' menu-item-has-children' : ''))
+        a(href= item.url)= item.title
+        if (item.submenu)
+          ul.sub-menu
+            each sub in item.submenu
+              li.menu-item
+                a(href= sub.url)= sub.title

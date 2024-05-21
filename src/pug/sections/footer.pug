@@ -1,3 +1,39 @@
+-
+  const footermenu = [
+    {
+      title: 'Новости',
+      url: '#'
+    },
+    {
+      title: 'Статьи',
+      url: '#'
+    },
+    {
+      title: 'Вакансии',
+      url: '#'
+    },
+    {
+      title: 'Студии',
+      url: '#'
+    },
+    {
+      title: 'Профессии',
+      url: '#'
+    },
+    {
+      title: 'О клубе',
+      url: '#'
+    },
+    {
+      title: 'Работы студентов',
+      url: '#'
+    },
+    {
+      title: 'Преподаватели',
+      url: '#'
+    }
+  ]
+
 footer.news-footer
   .container
     .news-footer__wrapper
@@ -11,22 +47,26 @@ footer.news-footer
       .news-footer__center
         .news-footer__menu
           ul.news-footer__menu-list
-            li.news-footer__menu-item
-              a(href="#").news-footer__menu-link Новости
-            li.news-footer__menu-item
-              a(href="#").news-footer__menu-link Статьи
-            li.news-footer__menu-item
-              a(href="#").news-footer__menu-link Вакансии
-            li.news-footer__menu-item
-              a(href="#").news-footer__menu-link Студии
-            li.news-footer__menu-item
-              a(href="#").news-footer__menu-link Професии
-            li.news-footer__menu-item
-              a(href="#").news-footer__menu-link О клубе
-            li.news-footer__menu-item
-              a(href="#").news-footer__menu-link Работы студентов
-            li.news-footer__menu-item
-              a(href="#").news-footer__menu-link Преподаватели
+            each item in footermenu
+              li.news-footer__menu-item
+                a(href= item.url).news-footer__menu-link= item.title
+            //- li.news-footer__menu-item
+            //-   a(href="#").news-footer__menu-link Новости
+            //- li.news-footer__menu-item
+            //-   a(href="#").news-footer__menu-link Статьи
+            //- li.news-footer__menu-item
+            //-   a(href="#").news-footer__menu-link Вакансии
+            //- li.news-footer__menu-item
+            //-   a(href="#").news-footer__menu-link Студии
+            //- li.news-footer__menu-item
+            //-   a(href="#").news-footer__menu-link Професии
+            //- li.news-footer__menu-item
+            //-   a(href="#").news-footer__menu-link О клубе
+            //- li.news-footer__menu-item
+            //-   a(href="#").news-footer__menu-link Работы студентов
+            //- li.news-footer__menu-item
+            //-   a(href="#").news-footer__menu-link Преподаватели
+
         p.news-footer__info ИП Тренин Андрей Евгеньевич <br> г. Москва ИНН 372102920162
         a(href="#").news-footer__policies Пользовательское соглашение
         a(href="#").news-footer__policies Политика обработки данных
